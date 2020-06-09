@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>PageInformations</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/styleInfo.css" />
+    <link rel="stylesheet" href="css/CSSInfo.css"/>
+    
+</head>
+
+<body style="
+margin-left: 0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+">
+    <div class="menuNav" style="font-family:sofia-pro, sans-serif;">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Recherche</a>
+            <a href="actu.html">Actualités</a>
+            <a href="news.html">Nouveautés</a>
+            <a href="aParaitre.html">A paraître</a>
+             <nav>
+            <ul>
+            <li><a id="coll" href="#collections">Collections</a>
+            <ul class="submenu">
+              <li ><a class="asub"  href="index.html#collections">• Économie</a></li>
+              <li><a class="asub" href="index.html#culinaire">• Arts culinaire</a></li>
+              <li><a class="asub"  href="index.html#culture">• Culture</a></li>
+              <li><a class="asub"  href="index.html#histoire">• Histoire</a></li>
+              <li><a class="asub"  href="index.html#biographie">• Biographies</a></li>
+              <li><a class="asub"  href="index.html#exception">• Livres d'exception</a></li>
+            </ul>
+            </li>
+            </ul>
+            </nav>
+			
+             <nav>
+            <ul>
+            <li><a id="coll" href="ebook.html">Ebook</a>
+            <ul class="submenu">
+              <li ><a class="asub"  href="ebook.html#collections">• Économie</a></li>
+              <li><a class="asub" href="ebook.html#culinaire">• Arts culinaire</a></li>
+              <li><a class="asub"  href="ebook.html#culture">• Culture</a></li>
+              <li><a class="asub"  href="ebook.html#histoire">• Histoire</a></li>
+              <li><a class="asub"  href="ebook.html#biographie">• Biographies</a></li>
+              <li><a class="asub"  href="ebook.html#exception">• Livres d'exception</a></li>
+            </ul>
+            </li>
+            </ul>
+            </nav>
+            <a href="Ithaclub.html">Le livre Ithaka</a>
+            <a href="librairie.html">Librairies partenaires</a>
+            <a href="auteur.html">Auteurs</a>
+        </div>
+
+        <div class="menugauche" style="font-family:sofia-pro, sans-serif;">
+            <div class="gauchemenu">
+                <span id="menuOuv" style="cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+                <script>
+                    function openNav() {
+                        document.getElementById("mySidenav").style.width = "250px";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                    }
+                </script>
+            </div>
+           
+        </div>
+
+
+        <div class="menumilieu" style="font-family:sofia-pro,sans-serif;">
+            <a href="index.html"><img id="logox" src="logo.png" alt></a>
+        </div>
+
+
+        <div class="menudroite">
+            <div class="votrecompte">
+                <img id="imgdroitemenu" src="MenuNav/panier.png" width="15" height="15" alt><a id="figcontact" href="panier.html">PANIER</a>
+            </div>
+            <div class="panier">
+                <img src="MenuNav/votrecompte.png" width="15" height="15" alt><a id="figcontact" href="connexion.html">VOTRE COMPTE</a>
+            </div>
+        </div>
+    </div>
+    <ul class="tabs" >
+        <li data-tab-target="#info" class="active tab" >Informations génerales</li>
+        <li data-tab-target="#adresseFac" class="tab">Adresse de facturation</li>
+        <li data-tab-target="#adresseLiv" class="tab">Adresse de livraison</li>
+        
+        <li data-tab-target="#communication" class="tab">Communication</li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="info" data-tab-content class="active">
+          
+          <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+            <div class="wrapper wrapper--w790">
+                <div class="card card-5">
+                    
+                        <h2 class="title" style="
+                        padding-top: 40px;
+                    ">Mon compte</h2>
+                        
+                    
+                    
+                    <div class="card-body" style="
+                    padding-top: 30px;
+                ">
+                        <form method="POST">
+                            <div class="form-row p-t-20">
+                                <label class="label label--block" style="width: 125px;text-align:left;">Civilité*</label>
+                            <div class="value">
+                                <div class="input-group">
+                                    <select name="Nationalité" class="input--style-5" style="width: 250px; height: 30px;
+                                    border width: 1px;">
+                                        <option disabled="disabled" selected="selected">Civilité</option>
+                                        <option>Mlle</option>
+                                        <option>Mme</option>
+                                        <option>M</option>
+                                        
+                                    </select>
+                                    
+                                </div>
+                            </div>
+                                
+                            </div>
+                            <div class="form-row">
+                                <div class="name">Nom*</div>
+                                <div class="value">
+                                    <div class="input-group">
+                                        <input class="input--style-5" type="text" name="nom" placeholder="Nelhomme" style="" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="name">Prénom*</div>
+                                <div class="value">
+                                    <div class="input-group">
+                                        <input class="input--style-5" type="text" name="prenom"  placeholder="Lhukas" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="name">Société </div>
+                                <div class="value">
+                                    <div class="input-group">
+                                        <input class="input--style-5" type="text" name="" placeholder="" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                           
+                            
+                            
+            
+                            
+                          
+                            <div class="form-row">
+                                <div class="name">email*</div>
+                                <div class="value">
+                                    <div class="input-group">
+                                        <input class="input--style-5" type="email" name="email" placeholder="lhukas.nelhomme@outlook.com" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="name">Confirmer email*</div>
+                                <div class="value">
+                                    <div class="input-group">
+                                        <input class="input--style-5" type="email" name="email" placeholder="lhukas.nelhomme@outlook.com" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="name">Télephone</div>
+                                <div class="value">
+                                    <div class="input-group">
+                                        <input class="input--style-5" type="phone" name="telephone" placeholder="0652483289" required>
+                                    </div>
+                                </div>
+                                <p style="margin-left: 450px;margin-top: 20px;">
+                                    (*) Mentions obligatoires.
+                                   </p>
+                            </div>
+                            
+                        
+                          
+                            
+                            <div style="
+                            margin-bottom: 30px;
+                        ">
+                                <button class="btnEnregistrer btn--radius-2 btn--red" type="submit" style="background: #009DCB;">Enregistrer modification</button>
+                            </div>
+    
+    
+                          
+                            </div>
+                           
+                           
+                          
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="adresseLiv" data-tab-content>
+            <p class="avertissement">   Si l'adresse de livraison est non renseignée. Le livre vous sera envoyé à l'adresse de facturation. </p>
+            <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+                <div class="wrapper wrapper--w790">
+                    <div class="card card-5">
+                        
+                            <h2 class="title" style="
+                            padding-top: 40px;
+                        ">Adresse de Livraison</h2>
+                            
+                        
+                        
+                        <div class="card-body" style="
+                        padding-top: 30px;
+                    ">
+                            <form method="POST">
+                                <div class="form-row">
+                                    <div class="name">Adresse</div>
+                                    <div class="value">
+                                        <div class="input-group">
+                                            <input class="input--style-5" type="text" name="nom" placeholder="" style="" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="name">Ville</div>
+                                    <div class="value">
+                                        <div class="input-group">
+                                            <input class="input--style-5" type="text" name="prenom"  placeholder="" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="name">Code postal</div>
+                                    <div class="value">
+                                        <div class="input-group">
+                                            <input class="input--style-5" type="text" name="" placeholder="" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row p-t-20">
+                                    <label class="label label--block" style="width: 125px;">Pays</label>
+                                <div class="value">
+                                    <div class="input-group">
+                                        <select name="Nationalité" class="input--style-5" style="width: 250px; height: 30px;
+                                        border width: 1px;">
+                                            <option disabled="disabled" selected="selected">France</option>
+                                            <option>Mlle</option>
+                                            <option>Mme</option>
+                                            <option>M</option>
+                                            
+                                        </select>
+                                        
+                                    </div>
+                                </div>
+                                    
+                                </div>
+                                <div style="
+                                margin-bottom: 30px;
+                            ">
+                                    <button class="btnEnregistrer btn--radius-2 btn--red" type="submit" style="background: #009DCB;">Valider</button>
+                                </div>
+        
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+        <div id="adresseFac" data-tab-content>
+            <p class="avertissement">   Le livre vous sera envoyé à l'adresse de facturation si l'adresse de livraison n'est pas renseignée. </p>
+            <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+                <div class="wrapper wrapper--w790">
+                    <div class="card card-5">
+                        
+                            <h2 class="title" style="
+                            padding-top: 40px;
+                        ">Adresse de Facturation</h2>
+                            
+                        
+                        
+                        <div class="card-body" style="
+                        padding-top: 30px;
+                    ">
+                            <form method="POST">
+                                
+                                <div class="form-row">
+                                    <div class="name">Adresse</div>
+                                    <div class="value">
+                                        <div class="input-group">
+                                            <input class="input--style-5" type="text" name="nom" placeholder="" style="" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="name">Ville</div>
+                                    <div class="value">
+                                        <div class="input-group">
+                                            <input class="input--style-5" type="text" name="prenom"  placeholder="" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="name">Code postal</div>
+                                    <div class="value">
+                                        <div class="input-group">
+                                            <input class="input--style-5" type="text" name="" placeholder="" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row p-t-20">
+                                    <label class="label label--block" style="width: 125px;">Pays</label>
+                                <div class="value">
+                                    <div class="input-group">
+                                        <select name="Nationalité" class="input--style-5" style="width: 250px; height: 30px;
+                                        border width: 1px;">
+                                            <option disabled="disabled" selected="selected">France</option>
+                                            <option>Mlle</option>
+                                            <option>Mme</option>
+                                            <option>M</option>
+                                            
+                                        </select>
+                                        
+                                    </div>
+                                </div>
+                                    
+                                </div>
+                                <div style="
+                                margin-bottom: 30px;
+                            ">
+                                    <button class="btnEnregistrer btn--radius-2 btn--red" type="submit" style="background: #009DCB;">Valider</button>
+                                </div>
+        
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+        <div id="communication" data-tab-content>
+            <h1>About</h1>
+            <p>Let me </p>
+          </div>
+      </div>
+      
+      <!-- Side Links Only -->
+     
+      </div>
+              
+        <div class="droite">
+          <div class="footer">
+            <div id="div1" class="intfooter">
+                <span><h2 id="titlediv">Informations complémentaires </h2>
+                  <div class="internefooter">
+                    <a href="contact.html"><p>Contact</p></a></br>
+                    <a href="mentions.html"><p>Mentions légales</p></a></br>
+                    <a href="conditions.html"><p>Conditions générales de vente</p></a></br>
+                    <a href="Documents/modalites.pdf"><p>Modalités de livraison</p></a></br>
+                    <a href="ligneEdi.html"><p>Ligne éditoriale</p></a>
+                  </div>
+                </span>
+                
+
+            </div>
+            
+            <div id="div3" class="intfooter">
+              <span><h2 id="titlediv">Nos partenaires</h2>
+                <div class="internefooter">
+                  <a href="librairie.html"><p>Librairies</p></a></br>
+                  <p>Promotion culturelle</p>
+                  <p>avec Finart-culture.fr </p>
+                    
+                </div>
+              </span>
+              
+               
+            </div>
+            <div id="div4" class="intfooter">
+              <span><h2 id="titlediv">Newsletter</h2>
+                <div class="internefooter">
+                    <p>Abonnez-vous à notre Newsletter!</p></br>
+                      <div >
+                        <label for= "e-mail">Votre mail <input style="width: 120px;" type="email" id="mail" name="user_mail"></label>
+                    </div>
+                    <div class="buttonn">
+                        <button   class="btnU" type="submit" style="font-family: 'Apple Chancery', cursive;" width=200>Je m'abonne</button>
+                    </div>
+                </div>
+              </span>
+            
+            </div>
+            <div class="intfooter">
+              <span><h2 id="titlediv">Suivez-nous !</h2>
+                <div id="reseaux" class="internefooter">
+                    <a href="https://www.facebook.com/Les-éditions-Ithaka-186416402236486/"><img src="réseaux/facebook.png" width=50 alt></a>
+                    
+                </div>
+              </span>
+            </div>
+            <div id="div2" class="intfooter">
+              <span><h2 id="titlediv"> </h2>
+                <div class="internefooter">
+                  <img src="logoPNG.png">
+                </div>
+              </span>
+              
+            </div>
+      </div>
+    </div>
+</body>
+</html>
+<script>
+    const tabs = document.querySelectorAll('[data-tab-target]')
+    const tabContents = document.querySelectorAll('[data-tab-content]')
+    
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget)
+        tabContents.forEach(tabContent => {
+          tabContent.classList.remove('active')
+        })
+        tabs.forEach(tab => {
+          tab.classList.remove('active')
+        })
+        tab.classList.add('active')
+        target.classList.add('active')
+      })
+    }) 
+</script>
