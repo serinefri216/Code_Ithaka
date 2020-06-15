@@ -1,0 +1,437 @@
+.menu{
+	font-size:16px;
+	font-weight: normal;
+}
+.buttonn {
+  margin-top:7px;
+  padding-left: 72px;
+  font-family: "Apple Chancery", cursive;
+
+  }
+.btnU{
+padding-right:5px;
+padding-left:5px;
+}
+.menuLien{
+padding-top:20px;
+padding-left:10px;
+font-size:16px;
+color: #003366;
+padding-bottom:20px;	
+background-color: rgb(236, 232, 232);
+}
+.menuLien:hover{
+color:#075db3;
+}
+.menuLiendiv{
+height:33.333333333333333333333333333333%;
+border-bottom: solid lightgrey 1px;
+}
+html, body {
+height: 100%;
+font-family:"Apple Chancery", cursive;
+background-color: #EFEFEF;
+
+}
+#title{
+margin-bottom:10px;
+margin: 15px;
+}
+
+
+
+#menu{
+margin:0;
+color:#696969;
+float:left;
+display:inline;
+vertical-align: center;
+margin-left:5px;
+list-style-type:none;
+text-decoration:none;
+}
+#menu div{
+width:200px;
+}
+.menu{
+position:relative;
+}
+
+#menu div a:link, #menu div a:visited, #menu div a:hover{
+color:rgb(44, 79, 107);
+text-decoration:none;
+padding-top:3px;
+height:22px;
+display:block;
+}
+
+#menu div a:hover, #menu div a:active, #menu div a:focus{
+color: steelblue;
+}
+.centreGauche{
+width: 20%;
+  height: 100%;
+  float: left;
+  background-color: #EFEFEF;
+  border-right: solid black 2px;
+}
+.centreDroite	{
+  width: 80%;
+  float: left;
+  background-color:white;
+  padding-top:12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background-color:white;
+}
+
+.gauche{
+  width: 15%;
+  height: 100%;
+  float: left;
+  background-color: #EFEFEF;
+
+}
+.haut
+{
+  background-color: rgb(236, 232, 232);
+  width:100%;
+  height:28%;
+  font-family:"Apple Chancery", cursive;
+  color:#696969;	
+  border-left:solid dimgrey 6px;
+}
+
+.bas
+{
+  background-color: #EFEFEF;
+  width:100%;
+  border-left:solid #003366 6px;	
+
+}
+.navcatalogue
+{
+  margin-left:10px;
+}
+
+
+.droite
+{
+  width: 85%;
+  float: left;
+  background-color:#DCDCDC;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family:"Apple Chancery", cursive;
+  background-color: #EFEFEF;
+
+}
+#title{
+  margin-bottom:10px;
+  margin: 15px;
+}
+
+  
+  
+
+
+.sousmenu{
+  position:absolute;
+  left:120px;
+  top:0;
+  background-color: #003366;
+  font-weight:bold;
+  padding:10px;
+  text-align:center;
+}
+
+
+
+.sidenav > nav > ul > li > a{
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 15px;
+	color: black;
+	display: block;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	font-family:"Apple Chancery", cursive;
+	margin-top:20px;	
+  }
+.submenu{
+	display: none;
+	text-decoration: none;
+	list-style-type: none;
+}
+.asub{
+	list-style-type: none;
+	display: inline-block;
+	text-decoration:none;
+	margin-bottom:10px;
+	padding:0px;
+	font-size:14px;
+	color:black;
+}
+
+
+
+nav li:hover .submenu{
+	 display:inline-block;
+	 position: absolute;
+	 z-index: 1000;
+	 top:100%;
+	 left:50px;
+}
+nav li:hover #coll {
+	margin-bottom: 200px;
+}
+
+
+nav > ul{
+	margin:0px;
+	padding:0px;
+}
+
+nav > ul > li{
+	position: relative;
+}
+input {
+    outline: none;
+    margin: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 90%;
+    font-size: 14px;
+}
+.btnU{
+	padding-right:5px;
+  padding-left:5px;
+  padding-top:0px;
+  padding-bottom:0px;
+}
+input {
+  outline: none;
+  margin: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 90%;
+  font-size: 14px;
+}
+p{
+margin:0;
+}
+#titlediv{
+color:white;
+font-size:90%;
+margin-top:50px;
+font-weight:normal;
+font-size:12.6px;
+
+}
+.droite
+{
+  width: 85%;
+  float: left;
+  background-color:#DCDCDC;
+}
+#reseaux
+{
+  text-align:left;
+}
+.internefooter
+{
+  margin-left:50px;
+  margin-right:50px;
+  margin-bottom:50px;
+  margin-top:30px;
+  color:darkgrey;
+  font-size:11.2px;
+  text-align: left;
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#003366    ;
+  color: white;
+  text-align:center;
+  height:10%;
+  display:inline-flex;
+  font-family:"Apple Chancery", cursive;
+}
+.intfooter{
+  width:20%;
+  background-color:#403F3F;
+  border-right:solid darkgrey 1px;
+  font-weight:bold;
+  
+}
+a
+{
+  text-decoration:none;
+  color:darkgrey;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+#catalogue
+	{
+		font-family:"Apple Chancery", cursive;
+		color:#003366;
+    font-size:16px;
+    margin-left:10px;
+    margin-bottom: 10px;
+    padding-top:15px;
+    font-weight: normal;
+    
+	}
+
+  .button {
+  
+  margin-left: .5em;
+  background-color: rgb(211, 211, 211);
+  border-radius:10px;
+  margin-top:5px;
+  }
+  textarea, select {
+  font: 1em sans-serif;
+  padding-right: 10px;
+  padding-left: 10px;
+ 
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+
+
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color:white;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 40px;
+text-align:left;
+}
+
+.sidenav > a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 15px;
+color: black;
+display: block;
+transition: 0.3s;
+letter-spacing: 1px;
+font-family:"Apple Chancery", cursive;
+margin-top:20px;	
+}
+
+.sidenav a:hover {
+color: skyblue;
+text-decoration: none;
+
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+.menuNav{
+  padding-top: 15px;
+  border-bottom: solid black 1.5px;
+background-color: white;
+display:inline-flex;	
+font-family:"Apple Chancery", cursive;
+font-size:16px;
+font-weight:bold;
+width:100%;
+height:17;
+}
+#menuOuv{
+float:left;
+margin-top:1.5%;
+font-family:"Apple Chancery", cursive;
+}
+#menuOuv:hover{
+color:skyblue;
+}
+.menugauche{
+float:left;
+width:30%;
+display:inline-flex;
+font-family:"Apple Chancery", cursive; 
+padding-left:15px;
+}
+.menumilieu{
+text-align:center;
+width:36%;
+font-family:"Apple Chancery", cursive;
+
+
+}
+.menudroite{
+font-family: "Apple Chancery", cursive;
+display:block;
+width:34%;
+padding-right:15px;
+}
+.gauchemenu{
+width:30%;
+margin-top:20px;
+}
+#contact{
+  margin-top:22px;
+  display:inline-flex;
+}
+#figcontact{
+color: black;
+font-size:16px;
+margin-left:3px;
+float:right;
+}
+#figcontact:hover{
+text-decoration: none;
+color:skyblue;
+}
+.panier{
+margin-top:26px;
+margin-left:50px;
+float:right;
+}
+.votrecompte{
+margin-top:26px;
+float:right;
+margin-left:46px;
+}

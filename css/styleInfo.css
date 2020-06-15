@@ -1,0 +1,200 @@
+
+input {
+    outline: none;
+    margin: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 90%;
+    font-size: 14px;
+}
+p{
+	margin:0;
+}
+#titlediv{
+	color:white;
+	font-size:12.6px;
+	margin-top:50px;
+
+}
+.droite
+	{
+		width: 80%;
+		float: left;
+		background-color:#DCDCDC;
+  }
+  #reseaux
+	{
+		text-align:left;
+	}
+	.internefooter
+	{
+		margin-left:50px;
+		margin-right:50px;
+		margin-bottom:50px;
+		margin-top:30px;
+		color:darkgrey;
+		font-size:11.2px;
+	}
+	.footer {
+		left: 0;
+		bottom: 0;
+		width: 125%;
+		background-color:#003366    ;
+		color: white;
+		text-align:center;
+		height:10%;
+		display:inline-flex;
+		font-family:"Apple Chancery", cursive;
+	}
+	.intfooter{
+		width:25%;
+		background-color:#403F3F;
+		border-right:solid darkgrey 1px;
+		font-weight:bold;
+		
+	}
+	a
+	{
+		text-decoration:none;
+		color:darkgrey;
+	}
+	a:hover{
+		text-decoration: underline;
+	}
+
+	.buttonn {
+		margin-top:7px;
+
+	  }
+	
+	  .button {
+		
+		margin-left: .5em;
+		background-color: rgb(211, 211, 211);
+		border-radius:10px;
+		margin-top:5px;
+	  }
+	  input, textarea, select {
+		font: 1em sans-serif;
+		padding-right: 10px;
+		padding-left: 10px;
+   
+  }
+
+  input:focus, textarea:focus {
+    border-color: #000;
+  }
+
+
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color:white;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 40px;
+	text-align:left;
+  }
+  
+  .sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 15px;
+	color: black;
+	display: block;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	font-family:"Apple Chancery", cursive;
+	margin-top:20px;	
+  }
+  
+  .sidenav a:hover {
+	color: skyblue;
+	text-decoration: none;
+	
+  }
+  
+  .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
+.menuNav{
+  border-bottom: solid skyblue 4px;
+background-color: white;
+display:inline-flex;	
+font-family:"Apple Chancery", cursive;
+font-size:16px;
+font-weight:bold;
+width:100%;
+}
+#menuOuv{
+float:left;
+margin-top:1.5%;
+font-family: "Apple Chancery", cursive;
+}
+#menuOuv:hover{
+color:skyblue;
+}
+.menugauche{
+float:left;
+width:30%;
+display:inline-flex;
+font-family: "Apple Chancery", cursive;;  
+}
+.menumilieu{
+text-align:center;
+width:36%;
+font-family: "Apple Chancery", cursive;;
+
+
+}
+.menudroite{
+font-family:"Apple Chancery", cursive;
+display:block;
+width:34%;
+}
+.gauchemenu{
+width:30%;
+margin-top:20px;
+}
+#contact{
+margin-top:26px;
+}
+#figcontact{
+color: black;
+font-size:16px;
+margin-left:3px;
+float:right;
+}
+#figcontact:hover{
+text-decoration: none;
+color:skyblue;
+}
+.panier{
+margin-top:26px;
+margin-left:50px;
+float:right;
+}
+.votrecompte{
+margin-top:26px;
+float:right;
+margin-left:46px;
+}
+
+
+* {box-sizing: border-box}

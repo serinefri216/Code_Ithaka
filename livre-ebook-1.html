@@ -8,79 +8,63 @@
   <link rel="stylesheet" href="css/style.css" />
 
 
-  <div class="menuNav">
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">Recherche</a>
-      <a href="actu.html">Actualités</a>
-      <a href="news.html">Nouveautés</a>
-      <a href="aParaitre.html">A paraître</a>
-       <nav>
-            <ul>
-            <li><a id="coll" href="#collections">Collections</a>
-            <ul class="submenu">
-              <li ><a class="asub"  href="index.html#collections">• Économie</a></li>
-              <li><a class="asub" href="index.html#culinaire">• Arts culinaire</a></li>
-              <li><a class="asub"  href="index.html#culture">• Culture</a></li>
-              <li><a class="asub"  href="index.html#histoire">• Histoire</a></li>
-              <li><a class="asub"  href="index.html#biographie">• Biographies</a></li>
-              <li><a class="asub"  href="index.html#exception">• Livres d'exception</a></li>
-            </ul>
-            </li>
-            </ul>
-            </nav>
-			
-             <nav>
-            <ul>
-            <li><a id="coll" href="ebook.html">Ebook</a>
-            <ul class="submenu">
-              <li ><a class="asub"  href="ebook.html#collections">• Économie</a></li>
-              <li><a class="asub" href="ebook.html#culinaire">• Arts culinaire</a></li>
-              <li><a class="asub"  href="ebook.html#culture">• Culture</a></li>
-              <li><a class="asub"  href="ebook.html#histoire">• Histoire</a></li>
-              <li><a class="asub"  href="ebook.html#biographie">• Biographies</a></li>
-              <li><a class="asub"  href="ebook.html#exception">• Livres d'exception</a></li>
-            </ul>
-            </li>
-            </ul>
-            </nav>
-      <a href="ithaclub.html">Le livre Ithaka</a>
-      <a href="librairie.html">Librairies partenaires</a>
-      <a href="auteur.html">Auteurs</a>
-    </div>
-
-    <div class="menugauche">
-      <div class="gauchemenu">
-        <span id="menuOuv" style="cursor:pointer" onclick="openNav()">&#9776; MENU</span>
-        <script>
-          function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-          }
-
-          function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-          }
-        </script>
-      </div>
-    </div>
+        <div class="menuNav">
+         
+        
+          <div class="menugauche">
+            
+			<div id="contact">
+				<input type="search" id="site-search" name="q" style="border:solid black 1px;height:25px;width:200px;"><button style="float:right;height:25px;margin-left:4px;width:28px;"><img src="loupe.png" width="12" height="12"></button>
+				
+			</div>
+        </div>
 
 
-    <div class="menumilieu">
-      <a href="index.html"><img id="logox" src="logo.png" alt></a>
-    </div>
+          <div class="menumilieu">
+           <a href="index.html"><img id="logox" src="logo.png" alt></a> 
+          </div>
 
 
-    <div class="menudroite">
-      <div class="votrecompte">
-        <img id="imgdroitemenu" src="MenuNav/panier.png" width="15" height="15" alt><a id="figcontact"
-          href="panier.html">PANIER</a>
-      </div>
-      <div class="panier">
-        <img src="MenuNav/votrecompte.png" width="15" height="15" alt><a id="figcontact" href="connexion.html">VOTRE
-          COMPTE</a>
-      </div>
-    </div>
-  </div>
+          <div class="menudroite">
+            <div class="votrecompte">
+              <img id="imgdroitemenu" src="MenuNav/panier.png" width="15" height="15" alt ><a id="figcontact" href="panier.html">PANIER</a>
+            </div>
+            <div class="panier">
+              <img src="MenuNav/votrecompte.png" width="15" height="15" alt ><a id="figcontact" href="connexion.html">VOTRE COMPTE</a>
+            </div>
+          </div>
+        </div>
+      
+       <div class="gauche">
+        
+            <div class="haut">  
+                <h1 id="catalogue">Nos collections</h1>
+
+                
+                <div id="menu">
+                    <div class="menu" id="menu1" ><a  style="padding-left:20px;" href="index.html#economie"> ► Économie</a></div>
+                    <div class="menu" id="menu2"><a  style="padding-left:20px;"  href="index.html#culinaire" > ► Arts culinaires</a></div>
+                    <div class="menu" id="menu3" ><a   style="padding-left:20px;"  href="index.html#culture"> ► Culture</a></div>
+                    <div class="menu" id="menu4"><a   style="padding-left:20px;" href="index.html#histoire"> ► Histoire</a></div>
+                    <div class="menu" id="menu5" ><a   style="padding-left:20px;"  href="index.html#biographies"> ► Biographies</a></div>
+                    <div class="menu" id="menu6" ><a   style="padding-left:20px;" href="index.html#exception"> ► Livres d'exception </a></div>
+                </div>
+                
+            </div>
+
+            <div class="bas">
+                <div style="border-top: solid lightgrey 1px;" class="menuLiendiv"><a style="text-decoration:none" href="aParaitre.html"><p class="menuLien" >A paraître</p></a></div>
+                <div class="menuLiendiv"><a style="text-decoration:none" href="ithaclub.html"><p class="menuLien" >Club Ithaka</p></a></div>
+                <div class="menuLiendiv"><a style="text-decoration:none" href="librairie.html"><p class="menuLien" >Libraires partenaires</p></a></div>
+            </div>
+        </div>
+
+          
+
+
+
+
+        <div class="droite">
 
 
   <div class="centre">
@@ -112,18 +96,6 @@
                 </td>
                 <td class="selection">
                   <input id="selection-support" type="radio" name="choix" value="radio1" checked="checked">
-                </td>
-              </tr>
-              <tr class="article-row" data-article-type="livre">
-                <td class="description-support">
-                  <span class="texte-livre">Livre papier</span> <br>
-                  <span class="texte-info-livre">format 155 x 240 - 240 pages</span>
-                </td>
-                <td class="prix">
-                  <span class="prix-article-livre">20,00€</span>
-                </td>
-                <td class="selection">
-                  <input id="selection-support" type="radio" name="choix" value="radio2">
                 </td>
               </tr>
               <tr class="article-row" data-article-type="ebook">
@@ -205,6 +177,13 @@
           font-size: 120%;
           text-align: justify;
         }
+
+        .tabcontent2 {
+          padding: 6px 12px;
+          border-top: none;
+          font-size: 120%;
+          text-align: justify;
+        }
       </style>
 
 
@@ -213,8 +192,8 @@
         <button class="tablinks" onclick="openCity(event, 'Paris')">Auteur</button>
       </div>
 
-      <div id="London" class="tabcontent">
-        <p>« Lorsque la guerre n'est plus évitable, il faut y entrer avec pour unique but de vaincre » extrait de la
+      <div id="London" class="tabcontent2">
+        <p>« DESCRIPTION LIVRE Lorsque la guerre n'est plus évitable, il faut y entrer avec pour unique but de vaincre » extrait de la
           Préface du Général d'armée François Lecointre, Chef d'État-major des armées.
           </br>
           Se préparer à faire face aux conflictualités de demain, en garantissant le succès des armes de la France,
@@ -237,7 +216,7 @@
 
       <div id="Paris" class="tabcontent">
         <p>
-        <p>« Lorsque la guerre n'est plus évitable, il faut y entrer avec pour unique but de vaincre » extrait de la
+        <p>« DESCRIPTION AUTEUR Lorsque la guerre n'est plus évitable, il faut y entrer avec pour unique but de vaincre » extrait de la
           Préface du Général d'armée François Lecointre, Chef d'État-major des armées.
           </br>
           Se préparer à faire face aux conflictualités de demain, en garantissant le succès des armes de la France,
@@ -263,10 +242,12 @@
 
       <script>
         function openCity(evt, cityName) {
-          var i, tabcontent, tablinks;
+          var i, tabcontent, tablinks,tabcontent2;
           tabcontent = document.getElementsByClassName("tabcontent");
+          tabcontent2 = document.getElementsByClassName("tabcontent2");
           for (i = 0; i < tabcontent.length; i++) {
             tabcontent[i].style.display = "none";
+            tabcontent2[i].style.display="none";
           }
           tablinks = document.getElementsByClassName("tablinks");
           for (i = 0; i < tablinks.length; i++) {
@@ -280,8 +261,7 @@
   </div>
 
 
-
-  <div class="droite">
+<div class="droiteF">
           <div class="footer">
             <div id="div1" class="intfooter">
                 <span><h2 id="titlediv">Informations complémentaires </h2>
@@ -289,7 +269,7 @@
                     <a href="contact.html"><p>Contact</p></a></br>
                     <a href="mentions.html"><p>Mentions légales</p></a></br>
                     <a href="conditions.html"><p>Conditions générales de vente</p></a></br>
-                    <a href="Documents/modalites.pdf"><p>Modalités de livraison</p></a></br>
+                    <a href="modalites.html"><p>Modalités de livraison</p></a></br>
                     <a href="ligneEdi.html"><p>Ligne éditoriale</p></a>
                   </div>
                 </span>
@@ -303,6 +283,8 @@
                   <a href="librairie.html"><p>Librairies</p></a></br>
                   <p>Promotion culturelle</p>
                   <p>avec Finart-culture.fr </p>
+                </br>
+                <a href="webmaster.html">Webmaster</a>
                     
                 </div>
               </span>
@@ -314,10 +296,10 @@
                 <div class="internefooter">
                     <p>Abonnez-vous à notre Newsletter!</p></br>
                       <div >
-                        <label for= "e-mail">Votre mail <input style="width: 120px;" type="email" id="mail" name="user_mail"></label>
+                        <label for= "e-mail">Votre mail <input style="width: 161px;" type="email" id="mail" name="user_mail"></label>
                     </div>
                     <div class="buttonn">
-                        <button  class="btnU" type="submit" style="font-family: 'Apple Chancery', cursive;" width=200>Je m'abonne</button>
+                        <button  class="btnU" type="submit" style="font-family: 'Apple Chancery', cursive;font-size:11.2px;width:90px;" >Je m'abonne</button>
                     </div>
                 </div>
               </span>
@@ -334,13 +316,13 @@
             <div id="div2" class="intfooter">
               <span><h2 id="titlediv"> </h2>
                 <div class="internefooter">
-                  <img src="logoPNG.png">
+                  <img src="logoPNG.png" width="150" height="54">
                 </div>
               </span>
               
             </div>
       </div>
     </div>
-</body>
-
+</div>
+  </body>
 </html>

@@ -1,0 +1,40 @@
+.conteneurActu
+{
+  display: block;
+  margin: auto;
+  width: 1200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #f0f0eb;
+  margin-top: 35px;
+}
+
+.TitreBandeau
+{
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.description
+{
+  font-size: 16px;
+  margin: 15px;
+  text-align: left;
+}
+.imgContenu
+{
+  border: 1px solid black;
+  float: left;
+  margin-left: 10px;
+  margin-top: 80px;
+  margin-bottom: 120px;
+    margin-right: 25px;
+}
+.titreActu{
+  padding-top:5px;
+  font-size:19.9px;
+}

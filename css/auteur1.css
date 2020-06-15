@@ -1,0 +1,393 @@
+	/* texte defilant */
+	
+/* le block conteneur */
+.marque-rtl {
+	max-width: 80%;                      /* largeur de la fenêtre */
+	margin: 1em auto 2em;
+	border: 3px solid #F0F0FF;
+	overflow: hidden;                     /* masque tout ce qui dépasse */
+	box-shadow: 0 .25em .5em #CCC,inset 0 0 1em .25em #CCC;
+  }
+  
+  /* le bloc défilant */
+  .marque-rtl > :first-child {
+	display: inline-block;                /* modèle de boîte en ligne */
+	padding-right: 2em;                   /* un peu d'espace pour la transition */
+	padding-left: 100%;                   /* placement à droite du conteneur */
+	white-space: nowrap;                  /* pas de passage à la ligne */
+	animation: defilement-rtl 35s infinite linear;
+	font-size:18pt;
+  }
+  
+  
+  .l:hover {
+	  animation-play-state: paused;
+	}
+  
+  @keyframes defilement-rtl {
+	0% {
+	  transform: translate3d(0,0,0);      /* position initiale à droite */
+	}
+	100% {
+	  transform: translate3d(-100%,0,0);  /* position finale à gauche */
+	}
+  }
+input {
+    outline: none;
+    margin: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 90%;
+    font-size: 14px;
+}
+p{
+	margin:0;
+}
+#titlediv{
+	color:white;
+	font-size:12.6px;
+	margin-top:50px;
+	font-weight: normal;
+
+}
+.droite
+	{
+		width: 80%;
+		float: left;
+		background-color:#DCDCDC;
+  }
+  #reseaux
+	{
+		text-align:left;
+	}
+	.internefooter
+	{
+		margin-left:50px;
+		margin-right:50px;
+		margin-bottom:50px;
+		margin-top:30px;
+		color:darkgrey;
+		font-size:11.2px;
+		text-align: left;
+	}
+	.footer {
+		left: 0;
+		bottom: 0;
+		width: 125%;
+		background-color:#003366    ;
+		color: white;
+		text-align:center;
+		height:10%;
+		display:inline-flex;
+		font-family:"Apple Chancery", cursive;
+	}
+	.intfooter{
+		width:25%;
+		background-color:#403F3F;
+		border-right:solid darkgrey 1px;
+		font-weight:bold;
+		
+	}
+	a
+	{
+		text-decoration:none;
+		color:darkgrey;
+	}
+	a:hover{
+		text-decoration: underline;
+	}
+
+	.buttonn {
+		margin-top:7px;
+		padding-left: 90px;
+
+	  }
+	
+	  .button {
+		
+		margin-left: .5em;
+		background-color: rgb(211, 211, 211);
+		border-radius:10px;
+		margin-top:5px;
+	  }
+	  input, textarea, select {
+		font: 1em sans-serif;
+		padding-right: 10px;
+		padding-left: 10px;
+   
+  }
+
+  input:focus, textarea:focus {
+    border-color: #000;
+  }
+
+
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color:white;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 40px;
+	text-align:left;
+  }
+  
+  .sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 15px;
+	color: black;
+	display: block;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	font-family:"Apple Chancery", cursive;
+	margin-top:20px;	
+  }
+  
+  .sidenav a:hover {
+	color: skyblue;
+	text-decoration: none;
+	
+  }
+  
+  .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
+  .menuNav{
+	padding-top: 5px;
+	border-bottom: solid black 1.5px;
+  background-color: white;
+  display:inline-flex;	
+  font-family:"Apple Chancery", cursive;
+  font-size:16px;
+  font-weight:bold;
+  width:100%;
+  height:17;
+}
+#menuOuv{
+float:left;
+margin-top:1.5%;
+font-family:"Apple Chancery", cursive;
+}
+#menuOuv:hover{
+color:skyblue;
+}
+.menugauche{
+float:left;
+width:30%;
+display:inline-flex;
+font-family:"Apple Chancery", cursive;  
+padding-left:15px;
+}
+.menumilieu{
+text-align:center;
+width:36%;
+font-family: "Apple Chancery", cursive;
+
+
+}
+.menudroite{
+font-family: "Apple Chancery", cursive;
+display:block;
+width:34%;
+padding-right:15px;
+}
+.gauchemenu{
+width:30%;
+margin-top:20px;
+}
+#contact{
+margin-top:26px;
+}
+#figcontact{
+color: black;
+font-size:16px;
+margin-left:3px;
+float:right;
+}
+#figcontact:hover{
+text-decoration: none;
+color:skyblue;
+}
+.panier{
+margin-top:26px;
+margin-left:50px;
+float:right;
+}
+.votrecompte{
+margin-top:26px;
+float:right;
+margin-left:46px;
+}
+
+
+
+
+
+
+* {box-sizing: border-box}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 5%;
+  height: 650px;
+  border-right-width:0px;
+  border-left-width:1px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  color: black;
+  width: 100%;
+  height:20%;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+/* Change background color of buttons on hover 
+.tab button:hover {
+  background-color: #ddd;
+}
+
+ Create an active/current "tab button" class 
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  padding-left:20px;	
+  padding-right:20px;
+  border: 1px solid #ccc;
+  width: 95%;
+  border-left: none;
+  height: 650px;
+  margin-bottom:75px;
+  font-size:18pt;
+  text-align:justify;
+}
+
+
+.main {
+	margin-top:4%;
+	margin-left:auto;
+	margin-right:auto;
+	max-width:770px;
+}
+
+.ttitre {
+	text-align:center;
+ font-weight: 800;
+  font-size: 28pt;
+  margin-bottom:40px;
+   padding-left:-8%;	
+  padding-right:-8%;
+  margin-top:30px;
+}
+
+.sommaire {
+		display:none;
+}
+
+.somm {
+	font-size:24pt;
+	line-height:405%;
+	margin-top:0%; 
+	color:black;
+	margin-left:20%;
+ 
+}
+
+.texte {
+	  padding-left:8%;	
+  padding-right:10%;
+}
+
+.but {
+	border:none;
+	padding:6px 0 6px 0;
+	border-radius:8px;
+	background:#d34836;
+	font:bold 13px Arial;
+	color:#fff;
+	cursor:pointer;
+	width:150px;
+}
+
+
+
+.contact {
+	text-decoration:none;
+
+}
+	
+
+.co {
+	display:inline-block;
+	width:100%;
+	text-align:center;
+	margin-top:30px;
+
+}
+
+
+.txt {
+
+font-size:18pt;
+	color:black;
+	width:100%;
+	margin:auto;
+	 font-family:"Apple Chancery", cursive;  
+
+}
+
+.tablinks1 {
+	font-size:18pt;
+	background:rgb(240, 255, 226);
+}
+.tablinks2 {
+	font-size:18pt;
+		background:rgb(240, 255, 226);
+		background-color:#fff2f2;
+
+}
+.tablinks3 {
+	font-size:18pt;
+		background:rgb(255, 249, 216);
+
+}
+.tablinks4 {
+	font-size:18pt;
+		background:rgb(247, 235, 244);
+
+}
+.tablinks5 {
+	font-size:18pt;
+		background:rgb(245, 245, 249);
+}

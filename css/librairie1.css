@@ -1,0 +1,461 @@
+
+/* texte defilant */
+	
+/* le block conteneur */
+.marquee-rtl {
+	max-width: 100%;                      /* largeur de la fenêtre */
+	margin: 1em auto 2em;
+	border: 3px solid #F0F0FF;
+	overflow: hidden;                     /* masque tout ce qui dépasse */
+	box-shadow: 0 .25em .5em #CCC,inset 0 0 1em .25em #CCC;
+  }
+  
+  /* le bloc défilant */
+  .marquee-rtl > :first-child {
+	display: inline-block;                /* modèle de boîte en ligne */
+	padding-right: 2em;                   /* un peu d'espace pour la transition */
+	padding-left: 100%;                   /* placement à droite du conteneur */
+	white-space: nowrap;                  /* pas de passage à la ligne */
+	animation: defilement-rtl 35s infinite linear;
+	font-size:18pt;
+  }
+  
+  
+  .l:hover {
+	  animation-play-state: paused;
+	}
+  
+  @keyframes defilement-rtl {
+	0% {
+	  transform: translate3d(0,0,0);      /* position initiale à droite */
+	}
+	100% {
+	  transform: translate3d(-100%,0,0);  /* position finale à gauche */
+	}
+  }
+
+body{
+	font-family:  "Apple Chancery", cursive;;
+}
+
+input {
+    outline: none;
+    margin: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 90%;
+    font-size: 14px;
+}
+p{
+	margin:0;
+}
+#titlediv{
+	color:white;
+	font-size:12.6px;
+	margin-top:50px;
+	font-weight: normal;
+}
+.droite
+	{
+		width: 80%;
+		float: left;
+		background-color:#DCDCDC;
+  }
+  #reseaux
+	{
+		text-align:left;
+	}
+	.internefooter
+	{
+		margin-left:50px;
+		margin-right:50px;
+		margin-bottom:50px;
+		margin-top:30px;
+		color:darkgrey;
+		font-size:11.2px;
+		text-align: left;
+	}
+	.footer {
+		left: 0;
+		bottom: 0;
+		width: 125%;
+		background-color:#003366    ;
+		color: white;
+		text-align:center;
+		height:10%;
+		display:inline-flex;
+	}
+	.intfooter{
+		width:25%;
+		background-color:#403F3F;
+		border-right:solid darkgrey 1px;
+		font-weight:bold;
+		
+	}
+	a
+	{
+		text-decoration:none;
+		color:darkgrey;
+	}
+	a:hover{
+		text-decoration: underline;
+	}
+
+	.buttonn {
+		margin-top:7px;
+		padding-left: 90px;
+
+	  }
+	
+	  .button {
+		
+		margin-left: .5em;
+		background-color: rgb(211, 211, 211);
+		border-radius:10px;
+		margin-top:5px;
+	  }
+	 
+
+  input:focus, textarea:focus {
+    border-color: #000;
+  }
+
+
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 101;
+	top: 0;
+	left: 0;
+	background-color:white;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 40px;
+	text-align:left;
+  }
+  
+  .sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 15px;
+	color: black;
+	display: block;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	font-family:"Apple Chancery", cursive;
+	margin-top:20px;	
+  }
+  
+  .sidenav a:hover {
+	color: skyblue;
+	text-decoration: none;
+	
+  }
+  
+  .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
+  .menuNav{
+	padding-top: 5px;
+	border-bottom: solid black 1.5px;
+  background-color: white;
+  display:inline-flex;	
+  font-family: "Apple Chancery", cursive;
+  font-size:16px;
+  font-weight:bold;
+  width:100%;
+  height:17;
+}
+#menuOuv{
+float:left;
+margin-top:1.5%;
+font-family:"Apple Chancery", cursive;
+}
+#menuOuv:hover{
+color:skyblue;
+}
+.menugauche{
+float:left;
+width:30%;
+display:inline-flex;
+font-family: "Apple Chancery", cursive;;  
+padding-left:15px;
+}
+.menumilieu{
+text-align:center;
+width:36%;
+font-family:"Apple Chancery", cursive;;
+
+
+}
+.menudroite{
+font-family: "Apple Chancery", cursive;;
+display:block;
+width:34%;
+padding-right:15px;
+}
+.gauchemenu{
+width:30%;
+margin-top:20px;
+}
+#contact{
+margin-top:26px;
+}
+#figcontact{
+color: black;
+font-size:16px;
+margin-left:3px;
+float:right;
+}
+#figcontact:hover{
+text-decoration: none;
+color:skyblue;
+}
+.panier{
+margin-top:26px;
+margin-left:50px;
+float:right;
+}
+.votrecompte{
+margin-top:26px;
+float:right;
+margin-left:46px;
+}
+
+
+
+/* Partie librairie*/
+address {
+	color:black;
+	font-size:12pt;
+	margin-top:20px;
+	line-height:170%;
+
+}
+
+.logo_lib {
+vertical-align:middle;
+width:70px;
+height:auto;
+
+}
+
+.reseaux {
+vertical-align:middle;
+width:30px;
+height:auto;
+padding-right:5px;
+
+}
+
+.space-40 {
+    height: 40px;
+    display: block;
+    content: '';
+}
+
+
+.p_lien {
+	text-align:justify;
+line-height:150%;
+padding-right:5%;
+	color:black;
+	margin-top:15px;
+}
+
+.p_sociaux {
+		text-align:justify;
+line-height:150%;
+padding-right:5%;
+	color:black;
+	margin-top:2%;
+}
+	
+.p_social {
+	color:black;
+}
+
+iframe {
+	width:100%;
+	height:100%;
+
+}
+
+.adr {
+
+  color: blue;
+  text-decoration: none;
+  font-size:12pt;
+  display:inline;
+  
+
+}
+
+main {
+
+	background: white;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+	margin-bottom:10px;
+
+
+}
+input[name=css-tabs] {
+  display: none;
+}
+
+#tabs {
+	margin-left:5.2%;
+	background: #f0f0eb;
+	height: 80px;
+	border-bottom: 5px solid #adadad;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+	width:304px;
+}
+
+#tabs::after {
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: 0;
+	height: 80px;
+	width: 102px;
+	background: #adadad; 
+	transition: transform 400ms;
+}
+#tabs label {
+	position: relative;
+	z-index: 100;
+	display: block;
+	float: left;
+  font-size: 11px;
+	text-transform: uppercase;
+	text-align: center;
+	width: 100px;
+	height: 100%;
+	border-right: 1px dotted #575654;
+	cursor: pointer;
+	
+}
+#tabs label:first-child {
+	border-left: 1px dotted #575654;
+}
+#tabs label::before {
+	content: "";
+	display: block;
+	height: 30px;
+	width: 30px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	filter: invert(40%);
+	margin: 10px auto;
+}
+#tab1::before {
+	background-image: url(../photosNico/loca.png);
+}
+#tab2::before {
+		background-image: url(../photosNico/desc.png);
+}
+#tab3::before {
+	background-image: url(../photosNico/site.png);	
+}
+
+}
+#radio1:checked ~ #tabs #tab1::before, #radio2:checked ~ #tabs #tab2::before, #radio3:checked ~ #tabs #tab3::before {
+	filter: invert(100%);
+}
+#radio1:checked ~ #tabs::after {
+	transform: translateX(0);
+}
+#radio2:checked ~ #tabs::after {
+	transform: translateX(101px);
+}
+#radio3:checked ~ #tabs::after {
+	transform: translateX(202px);
+}
+
+#content {
+	position: relative;
+	height: 200px;
+	max-height:300px;
+	margin-left:5.3%;
+	margin-right:1%;
+	margin-bottom:1%;
+}
+
+
+#content section {
+	position: absolute;
+	transform: translateY(50px);
+	opacity: 0;
+	transition: transform 500ms, opacity 500ms;
+	margin-left:-10000px;
+}
+ #radio2:checked ~ #content #content2, #radio3:checked ~ #content #content3 {
+	transform: translateY(0);
+	opacity: 1;
+	margin-left:0px;
+	width:100%;
+}
+
+#radio2:checked ~ #content #content1,  #radio3:checked ~#content #content1 {
+	transform: translateY(0);
+	opacity: 0;
+	margin-left:-10000px;
+
+}
+
+#content #content1 {
+margin-left:0px;
+opacity:1;
+width:100%;
+height:81%;
+margin-top:-2%;
+}
+
+
+/* 2eme partie */
+
+#content #content4 {
+margin-left:0px;
+opacity:1;
+width:100%;
+height:81%;
+margin-top:-2%;
+}
+
+#radio5:checked ~ #tabs::after {
+	transform: translateX(0);
+}
+#radio6:checked ~ #tabs::after {
+	transform: translateX(101px);
+}
+#radio7:checked ~ #tabs::after {
+	transform: translateX(202px);
+}
+
+
+#radio5:checked ~ #content #content1, #radio6:checked ~ #content #content2, #radio7:checked ~ #content #content3 {
+	transform: translateY(0);
+	opacity: 1;
+	margin-left:0px;
+	width:100%;
+}
+
+#radio6:checked ~ #content #content4,  #radio7:checked ~#content #content4 {
+	transform: translateY(0);
+	opacity: 0;
+	margin-left:-10000px;
