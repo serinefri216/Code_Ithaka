@@ -2,6 +2,9 @@
     <body>
       <title>ITHAKA éditons</title>
       <meta charset="utf-8"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="css/style.css" />
 
 
@@ -52,7 +55,7 @@
 
                   </div>
                   <div class="haut">
-                        <h1 id="catalogue"  ><a style="text-decoration:none" href="livresWM.php" >  Livres</a></h1>
+                    <h1 id="catalogue"  ><a style="text-decoration:none" href="livresWM.php" >  Livres</a></h1>
 
 
                       <div id="menu">
@@ -74,6 +77,24 @@
                   </div>
               </div>
 
+              <div class="container admin">
+                <div class="row">
+                <h1><strong>Liste des collections  </strong><a href="#" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-plus"></span> Créer</a></h1>
+                <table class="table table-striped table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Nom</th>
+                      <th>Description</th>
+                      <th>Nombre de Livres</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                   </tbody>
+                   </table>
+                   </div>
+               </div>
 
 
 

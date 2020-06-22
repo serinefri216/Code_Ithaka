@@ -1,26 +1,26 @@
 <!DOCTYPE html><html lang="fr">
     <body>
-      
+
         <title>ITHAKA éditons</title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="css/style.css" />
-		
-       
+
+
 
         <div class="menuNav">
-         
-        
+
+
           <div class="menugauche">
-            
+
 			<div id="contact">
 				<input type="search" id="site-search" name="q" style="border:solid black 1px;height:25px;width:200px;"><button style="float:right;height:25px;margin-left:4px;width:28px;"><img src="loupe.png" width="12" height="12"></button>
-				
+
 			</div>
         </div>
 
 
           <div class="menumilieu">
-           <a href="index.html"><img id="logox" src="logo.png" alt></a> 
+           <a href="index.html"><img id="logox" src="logo.png" alt></a>
           </div>
 
 
@@ -33,13 +33,13 @@
             </div>
           </div>
         </div>
-      
+
        <div class="gauche">
-        
-            <div class="haut">  
+
+            <div class="haut">
                 <h1 id="catalogue">Nos collections</h1>
 
-                
+
                 <div id="menu">
                     <div class="menu" id="menu1" ><a  style="padding-left:20px;" href="index.html#economie"> ► Économie</a></div>
                     <div class="menu" id="menu2"><a  style="padding-left:20px;"  href="index.html#culinaire" > ► Arts culinaires</a></div>
@@ -48,23 +48,25 @@
                     <div class="menu" id="menu5" ><a   style="padding-left:20px;"  href="index.html#biographies"> ► Biographies</a></div>
                     <div class="menu" id="menu6" ><a   style="padding-left:20px;" href="index.html#exception"> ► Livres d'exception </a></div>
                 </div>
-                
+
             </div>
 
             <div class="bas">
                 <div style="border-top: solid lightgrey 1px;" class="menuLiendiv"><a style="text-decoration:none" href="aParaitre.html"><p class="menuLien" >A paraître</p></a></div>
                 <div class="menuLiendiv"><a style="text-decoration:none" href="ithaclub.html"><p class="menuLien" >Club Ithaka</p></a></div>
                 <div class="menuLiendiv"><a style="text-decoration:none" href="librairie.html"><p class="menuLien" >Libraires partenaires</p></a></div>
+                <div class="menuLiendiv"><a style="text-decoration:none" href="#"><p class="menuLien" >Mon Profil</p></a></div>
+
             </div>
         </div>
 
-          
+
 
 
 
 
         <div class="droite">
-            
+
             <div class="centre">
             </br>
                 <div id="slidy-container">
@@ -95,7 +97,7 @@
                           captionFont: 'Avenir, Avenir Next, Droid Sans, DroidSansRegular, Corbel, Tahoma, Geneva, sans-serif',
                           captionPosition: 'bottom', // options: top, bottom
                           captionAppear: 'slide', //  options: slide, perm, fade
-                          captionSize: '1.6rem', 
+                          captionSize: '1.6rem',
                           captionPadding: '.6rem'
                           };
                           for (var option in defaultOptions) mergedOptions[option] = defaultOptions[option];
@@ -134,7 +136,7 @@
                                   temp = fig.cloneNode(false);
                                   who = images[--L];
                               // wraps all images in the slider with <figure> tags
-                              if (options.captionSource!=="none")				
+                              if (options.captionSource!=="none")
                                   caption = who.getAttribute(options.captionSource);
                                   who.parentNode.insertBefore(temp, who);
                                   if (caption !== null) {
@@ -166,7 +168,7 @@
                             css.innerHTML += options.slidySelector + " figure { float: left; margin: 0; position: relative; display: inline-block; width: " + basePercentage + "%; height: auto; }\n"; // set the width and size pf the inner <figure> elements
                             css.innerHTML += options.slidySelector + " figure img { width: 100%; }\n";
                             css.innerHTML += options.slidySelector + " figure figcaption { position: absolute; width: 100%; background-color: " + options.captionBackground + "; color: " + options.captionColor + "; font-family: " + options.captionFont + ";";
-                            
+
                             var captions = document.getElementsByTagName("figcaption");
                             var captionHeight = captions[0].offsetHeight*2 +  parseInt(window.getComputedStyle(captions[0]).fontSize, 10);
                             if (options.captionPosition == "top") {
@@ -174,10 +176,10 @@
                                   case 'fade':
                                       css.innerHTML += " top: 0; opacity: 0;";
                                       break;
-                                  case 'slide': 
+                                  case 'slide':
                                       css.innerHTML += " top: -"+captionHeight+"px; ";
                                       break;
-                                  default: 
+                                  default:
                                       css.innerHTML += " top: 0;";
                                   }
                               } else {
@@ -185,10 +187,10 @@
                                   case 'fade':
                                       css.innerHTML += " bottom: 0; opacity: 0;";
                                       break;
-                                  case 'slide': 
+                                  case 'slide':
                                       css.innerHTML += " bottom: -"+captionHeight+"px; ";
                                       break;
-                                  default: 
+                                  default:
                                       css.innerHTML += " bottom: 0;";
                                   }
                               }
@@ -199,14 +201,14 @@
                               css.innerHTML += " }\n";
                               css.innerHTML += "@" + keyframeprefix + "keyframes " + options.cssAnimationName + " {\n";
                        if (options.slidyDirection == "right") {
-                           for (i = imgCount - 1; i > 0; i--) { // 
+                           for (i = imgCount - 1; i > 0; i--) { //
                                   position += slideRatio; // make the keyframe the position of the image
                                   css.innerHTML += position + "% { left: -" + (i * 100) + "%; }\n";
                                   position += moveRatio; // make the postion for the _next_ slide
                                   css.innerHTML += position + "% { left: -" + ((i - 1) * 100) + "%; }\n";
                   }
-                       } else {  // the slider is moving to the left    
-                              for (i = 0; i < (imgCount - 1); i++) { // 
+                       } else {  // the slider is moving to the left
+                              for (i = 0; i < (imgCount - 1); i++) { //
                                   position += slideRatio; // make the keyframe the position of the image
                                   css.innerHTML += position + "% { left: -" + (i * 100) + "%; }\n";
                                   position += moveRatio; // make the postion for the _next_ slide
@@ -217,7 +219,7 @@
                               css.innerHTML += options.slidySelector + " { ";
                              if (options.slidyDirection == "right") { css.innerHTML += "left: " + imgCount*100+"%" }
                              else { css.innerHTML += "left: 0%; " }
-                               
+
                              css.innerHTML += keyframeprefix + "transform: translate3d(0,0,0); " + keyframeprefix + "animation: " + totalTime + "s " + options.cssAnimationName + " infinite; }\n"; // call on the completed keyframe animation sequence
                               // place css style tag
                               if (options.cssLocation !== undefined) options.cssLocation.appendChild(css);
@@ -290,8 +292,8 @@
 					  <img id="ok" src="livresEco/livreeco2.jpg" width=200 alt>
 					  <img id="ok" src="livresEco/livreeco3.jpg" width=200 alt>
 					  </div>
-        
-              
+
+
         <div class="droiteF">
           <div class="footer">
             <div id="div1" class="intfooter">
@@ -304,10 +306,10 @@
                     <a href="ligneEdi.html"><p>Ligne éditoriale</p></a>
                   </div>
                 </span>
-                
+
 
             </div>
-            
+
             <div id="div3" class="intfooter">
               <span><h2 id="titlediv">Nos partenaires</h2>
                 <div class="internefooter">
@@ -316,11 +318,11 @@
                   <p>avec Finart-culture.fr </p>
                 </br>
                 <a href="webmaster.html">Webmaster</a>
-                    
+
                 </div>
               </span>
-              
-               
+
+
             </div>
             <div id="div4" class="intfooter">
               <span><h2 id="titlediv">Newsletter</h2>
@@ -334,13 +336,13 @@
                     </div>
                 </div>
               </span>
-            
+
             </div>
             <div class="intfooter">
               <span><h2 id="titlediv">Suivez-nous !</h2>
                 <div id="reseaux" class="internefooter">
                     <a href="https://www.facebook.com/Les-éditions-Ithaka-186416402236486/"><img src="réseaux/facebook.png" width=50 alt></a>
-                    
+
                 </div>
               </span>
             </div>
@@ -350,7 +352,7 @@
                   <img src="logoPNG.png" width="150" height="54">
                 </div>
               </span>
-              
+
             </div>
       </div>
     </div>
